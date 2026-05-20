@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%% TOPIC INFORMATION
+\newcommand{\thetopicname}{A Fascinating Topic}
+
+%% LECTURE INFORMATION
+\newcommand{\thelecturename}{A Fascinating Lecture}
+\newcommand{\thelecturedate}{July 20, 1969}
+\newcommand{\thelecturer}{The Lecturer}
+\newcommand{\thelectureremail}{lecturer@example.com}
+
+%% PAGE SETUP
+\pagestyle{fancy}
+\lhead{\textit{\thetopicname}}
+\rhead{\thelecturename}
+
+\title{{\Large \thetopicname} \\ \textsc{\thelecturename}}
+\author{\thelecturer \\ \href{mailto:\thelectureremail}{\thelectureremail}}
+\date{\thelecturedate}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\section{First Topic}
+	
+	Lots of interesting information!
+	
+	\newpage
+	
+	More interesting information!
+\end{document}
