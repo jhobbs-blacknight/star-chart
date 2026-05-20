@@ -12,6 +12,7 @@ all: $(PDF_FILES)
 %.pdf: %.tex
 	echo "Building $<"
 	pdflatex -output-directory="$(@D)" "$<" > /dev/null
+	pdflatex -output-directory="$(@D)" "$<" > /dev/null
 
 clean:
 	rm -f $(PDF_FILES)

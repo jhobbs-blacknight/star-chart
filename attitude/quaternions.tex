@@ -28,7 +28,16 @@
 	\maketitle
 	\tableofcontents
 	
-    \section{Motivating Quaternions}
+    \section{Representing Rotations}
 	
-    
+    The modeling of attitude dynamics is an absolutely indispensable part of space mission design.  However, the rotation of objects in three dimensions, around multiple principal axes simultaneously and subject to unbalanced torques, is notorious for causing even the most capable engineers nearly incurable headaches.
+
+    Eventually, engineers tired of taking aspirin, so they starting coming up with standard conventions for representing attitude.  However, each of these conventions brought along their own causes for frustration.
+
+    \textit{Note}: in this document, and throughout \textit{Star Chart}, atittude representations will correspond to rotations \textit{from} the body frame of a satellite \textit{to} a relevant inertial frame (such as \textsc{ECI}).
+
+    \begin{itemize}
+        \item \textbf{Euler Angles}.  These are... \textit{awful}.  There are no fewer than \textit{literally} 24 competing conventions for Euler angles.  Also, each unique attitude state has a countably infinite number of Euler angles corresponding to it (because you can add \( 2\pi \) radians or \( 360 \) degrees to wrap around).
+        \item \textbf{Rotation Matrices}.  These are a bit better than Euler angles.  One rotation matrix exists for each attitude state, unlike Euler angles.  However, they come at a cost... they're extremely overparameterized.  Attitude is inherently a ``three-dimensional" thing, but rotation matrices require nine values (square \( 3 \times 3 \) matrix).  This requires lots of memory when doing complex calculations.  They also encounter significant numerical issues during estimation tasks, such as least-squares estimation.
+    \end{itemize}
 \end{document}
