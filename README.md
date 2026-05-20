@@ -1,8 +1,8 @@
-# Space Atlas
+# Star Chart
 
 This is my "atlas" of explanations for technical concepts commonly encountered in space mission design.  All work is based on publicly available textbooks, technical references, or academic publications.
 
-## About Space Atlas
+## About Star Chart
 
 Designing space missions is highly interdisciplinary, so no collection of technical explanations could hope to cover every topic.  However, this atlas intends to distill the following concepts, which I find to be most significant.
 
