@@ -44,11 +44,24 @@
 
     \section{Quaternions}
 
-    The vector space of \textbf{quaternions} is a natural extension of the complex numbers, and quaternions can be used to naturally represent rotations.  A quaternion consists of a \textit{scalar part} and a \textit{vector part}.
+    The vector space of \textbf{quaternions} is a natural extension of the complex numbers, and quaternions can be used to naturally represent rotations.  A quaternion consists of a \textit{scalar part} \( s \) and a \textit{vector part} \( \mathbf{v} \).
 
-    \[
+    \begin{equation}
         q = \begin{bmatrix} s \\ \mathbf{v} \end{bmatrix}
-    \]
+    \end{equation}
 
-    Here, we will always write the scalar part \textit{before} the vector part.  Some people write the scalar part after the vector part; this is the only other competing convention.
+    Here, we will always write the scalar part \textit{before} the vector part.  Some people write the scalar part after the vector part; this is the only other competing convention.  Quaternions are often seen as an extension of the complex numbers because they are also written as
+
+    \begin{equation}
+        q = s + i v_x + j v_y + k v_z
+    \end{equation}
+
+    with \( i, j, k \) obeying the identities
+
+    \begin{align}
+        i^2 &= -1, \\
+        j^2 &= -1, \\
+        k^2 &= -1, \\
+        ijk &= -1. \\
+    \end{align}
 \end{document}
